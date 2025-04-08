@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <!-- 
+    Program name: homework2.html
+    Author: Uyen Truong
+    Date created: 02/23/2025
+    Date last edited: 02/28/2025
+    Version: 1.0
+    Description: this form is created for patients to fill in their information
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Uyen's Homework 1 </title>
+        <link rel="stylesheet" href="homework2.css">
+        <style>
+        h2 
+        {
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div id = "header">
+            <table width = "100%">
+                <tr>
+                    <td>
+                        <img
+                            id = "logo"
+                            src = "stethoscope_3.jpg" height="200" width="200"
+                            alt = "Future Medical Center"
+                        >
+                    </td>
+                    <td>Future Healthcare Medical Center</td>
+                    <td valign="bottom" align="right">Today is: <span id="today"></span></td>
+                </tr>
+            </table>
+        </div>   
+        <h2> Thank you for your submission!</h2>
+        <div id="footer">
+            <p>&copy; 2025 Future Healthcare Medical Center. All rights reserved.</p>
+            <p> 5718 Greenhouse Rd, Katy, TX 77449</p>
+            <p><a href="contact-us.html">Contact Us</a></p>
+        </div>
+        <script src="homework2.js"></script> 
+        <script>
+            const d = new Date();
+            let text = d.toLocaleDateString();
+            document.getElementById("today").innerHTML = text;
+        </script>  
+    </body>
+</html>
